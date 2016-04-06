@@ -7,6 +7,9 @@ Scenario:
 * python script get image, and handle by OpenCV - recognise any green object and make marker over it
 * python script return image to Vision Sensor 'v1'
 
+Screenshot:
+
+![](screenshot.jpg)
 
 File:
 
