@@ -1,6 +1,8 @@
 V-Rep API python OpenCV demo
 ============================
 
+Demo for track green object by OpenCV.
+
 Scenario:
 
 * Vision Sensor `v0` get image from 3d scene
