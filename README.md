@@ -13,6 +13,11 @@ Screenshot:
 
 ![](v-rep-api-python-opencv-screenshot.jpg)
 
+
+Video:
+
+* https://vimeo.com/161906321
+
 File:
 
 * `scene.ttt` V-REP scene (based on `rosTopicPublisherAndSubscriber1.ttt`)
