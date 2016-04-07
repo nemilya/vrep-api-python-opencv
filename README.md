@@ -41,4 +41,3 @@ Start:
 4. Image in `v1` Vision sensor - from python
 
 
-Status: draft (work in progress)
