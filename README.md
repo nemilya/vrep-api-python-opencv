@@ -9,18 +9,22 @@ Scenario:
 
 Screenshot:
 
-![](screenshot.jpg)
+![](v-rep-api-python-opencv-screenshot.jpg)
 
 File:
 
 * `scene.ttt` V-REP scene (based on `rosTopicPublisherAndSubscriber1.ttt`)
 * `handle_vision_sensor.py` - python script for handle image from V-REP
 
+Scene:
+* `v0` - Vision Sensor - as source image for OpenCV
+* `v1` - Vision Sensor - checked as "External input" - for output from python
+
 Install:
 
 * V-REP: http://www.coppeliarobotics.com/downloads.html (tested on V-REP_PRO_EDU_V3_3_0_64_Linux)
-* Python: https://www.python.org (tested in https://www.python.org (Python 2.7.6)
-* OpenCV, Python OpenCV binding (http://milq.github.io/install-opencv-ubuntu-debian/)
+* Python: https://www.python.org (tested in Python 2.7.6)
+* OpenCV, Python OpenCV binding (f.e. http://milq.github.io/install-opencv-ubuntu-debian/)
 
 Copy in this folder following files from V-REP:
 
@@ -37,4 +41,4 @@ Start:
 4. Image in `v1` Vision sensor - from python
 
 
-Status: draft. Work in progress
+Status: draft (work in progress)

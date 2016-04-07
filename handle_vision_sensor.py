@@ -63,15 +63,11 @@ if clientID!=-1:
     err, resolution, image = vrep.simxGetVisionSensorImage(clientID, v0, 0, vrep.simx_opmode_buffer)
     if err == vrep.simx_return_ok:
       image_byte_array = array.array('b', image)
-      im = I.frombuffer("RGB", (resolution[0],resolution[1]), image_byte_array, "raw", "RGB", 0, 1)
-      im.save('out.bmp')
-      
-      img2 = cv2.imread('out.bmp')
-
-      # try to find some green object by OpenCV
+      image_buffer = I.frombuffer("RGB", (resolution[0],resolution[1]), image_byte_array, "raw", "RGB", 0, 1)
+      img2 = numpy.asarray(image_buffer)
       ret = track_green_object(img2)
 
-      # overlay marker if found by OpenCV
+      # overlay rectangle marker if something is found by OpenCV
       if ret:
         cv2.rectangle(img2,(ret[0]-15,ret[1]-15), (ret[0]+15,ret[1]+15), (0xff,0xf4,0x0d), 1)
 
