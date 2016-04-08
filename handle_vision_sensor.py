@@ -65,6 +65,8 @@ if clientID!=-1:
       image_byte_array = array.array('b', image)
       image_buffer = I.frombuffer("RGB", (resolution[0],resolution[1]), image_byte_array, "raw", "RGB", 0, 1)
       img2 = numpy.asarray(image_buffer)
+
+      # try to find something green
       ret = track_green_object(img2)
 
       # overlay rectangle marker if something is found by OpenCV
